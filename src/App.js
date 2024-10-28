@@ -4,7 +4,7 @@ import PhotoList from "./components/PhotoList/PhotoList";
 import PhotoDetail from './components/PhotoDetail/PhotoDetail';
 function App() {
   return (
-    <Router>
+    <Router basename='/Unplash-Gallery'>
       <Routes>
         <Route path='/' element={<PhotoList/>}/>
         <Route path='/photos/:id' element={<PhotoDetail/>}/>
